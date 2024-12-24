@@ -1,6 +1,7 @@
 // src/components/SnowText.jsx
 import React from 'react';
 import '../css/SnowText.css';
+import tree from '../assets/images/fb3ebf19f7550bc9af54ac3be9b92e9.png'
 
 const SnowText = ({ text }) => {
     return (
@@ -70,7 +71,7 @@ const SnowText = ({ text }) => {
                     >
                         {text}
                     </text>
-                    <image x="0" y="30" width="100" height="100" href="/src/assets/images/fb3ebf19f7550bc9af54ac3be9b92e9.png" />
+                    <image x="0" y="30" width="100" height="100" href={tree} />
                 </g>
             </svg>
         </div>
