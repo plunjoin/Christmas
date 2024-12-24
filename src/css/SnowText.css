@@ -1,0 +1,68 @@
+/* src/components/SnowText.css */
+
+@font-face {
+    font-family: crhistmas;
+    src: url('../assets/font/holly-and-berries-2.ttf');
+}
+
+@font-face {
+    font-family: littleBirds;
+    src: url('../assets/font/LittleBirdsRegular-lg81w-2.ttf');
+}
+
+.snow-text-container {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 10%;
+    right: 0;
+    font-family: littleBirds;
+}
+
+.snow-text {
+    display: inline-block;
+    font-size: 2em;
+    color: #fff;
+    position: relative;
+    text-shadow: 0 0 5px #000;
+}
+
+.snow-char {
+    position: relative;
+    display: inline-block;
+    animation: snow-fall 2s infinite;
+}
+
+@keyframes snow-fall {
+    0% {
+        top: -10px;
+        opacity: 0;
+    }
+
+    50% {
+        top: 0;
+        opacity: 1;
+    }
+
+    100% {
+        top: 10px;
+        opacity: 0;
+    }
+}
+
+.snow-text:hover {
+    color: #00f;
+    text-shadow: 0 0 10px #00f;
+}
+
+.snow-char:hover {
+    animation: none;
+    transform: scale(1.1);
+}
+
+.text {
+    text-transform: uppercase;
+    font-stretch: condensed;
+    text-decoration: underline;
+    letter-spacing: 1px;
+}

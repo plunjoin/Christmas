@@ -1,0 +1,24 @@
+.tree-container {
+    position: absolute;
+    top: 150px;
+    left: 0;
+    width: 100%;
+    height: calc(100% - 150px);
+}
+
+.blinking-star {
+    /* animation: blink 3s infinite; */
+}
+
+@keyframes blink {
+
+    0%,
+    95%,
+    100% {
+        opacity: 1;
+    }
+
+    97% {
+        opacity: 0;
+    }
+}
